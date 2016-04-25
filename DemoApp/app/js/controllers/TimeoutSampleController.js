@@ -7,12 +7,12 @@ eventsApp.controller('TimeoutSampleController',
         //     $scope.name = 'Bruno Ferreira';
         // }, 3000);
         
-        var promisse = $timeout(function () {
+        var promise = $timeout(function () {
             $scope.name = 'Bruno Ferreira';
         }, 3000);
 
         $scope.cancel = function () {
-            $timeout.cancel(promisse);
+            $timeout.cancel(promise);
         };
     }
 );
